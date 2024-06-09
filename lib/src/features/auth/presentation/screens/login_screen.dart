@@ -4,7 +4,6 @@ import 'dart:async';
 
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -39,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
     _authSubscription =
         Supabase.instance.client.auth.onAuthStateChange.listen((event) {
       final session = event.session;
-      if (session != null) {
+      if (session != null && session.user.id.isNotEmpty) {
         context.pushReplacementNamed(RoutePaths.appScreenRoute);
       }
     });

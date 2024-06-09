@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:kamandi/main.dart';
+
 import 'package:kamandi/src/features/chat/chat_screen.dart';
+import 'package:kamandi/src/features/gallery/home_screen.dart';
 import 'package:kamandi/src/features/notes/presentation/screens/note_screen.dart';
 
 final bottomNavbarIndexProvider = StateProvider<int>((ref) => 0);

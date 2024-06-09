@@ -1,10 +1,10 @@
 import 'package:go_router/go_router.dart';
 import 'package:kamandi/app.dart';
-import 'package:kamandi/main.dart';
 import 'package:kamandi/src/features/auth/presentation/screens/landing_screen.dart';
 import 'package:kamandi/src/features/auth/presentation/screens/login_screen.dart';
 import 'package:kamandi/src/features/auth/presentation/screens/register_screen.dart';
 import 'package:kamandi/src/features/auth/presentation/screens/splash_screen.dart';
+import 'package:kamandi/src/features/gallery/home_screen.dart';
 import 'package:kamandi/src/routing/route_paths.dart';
 
 final appRouter = GoRouter(routes: [
